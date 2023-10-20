@@ -1,0 +1,201 @@
+<!--
+This is your default homepage.
+For more information, see:
+• https://sailsjs.com/documentation/concepts/views
+• https://sailsjs.com/documentation/concepts/routes
+-->
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --bg-color: #1f242d;
+    --text-color: #fff;
+    --main-color: rgb(103, 17, 17);
+    --white-color: #fdfdfd;
+    --shadow-color: rgba (0, 0, 0, .2);
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #000000 #333333;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #333333;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 0px;
+    border: 1px none #ffffff;
+  }
+
+html {
+    font-size: 62.5%;
+    overflow: none;
+}
+
+body {
+    height: 100vh;
+    width: auto;
+    background-color: rgb(31, 36, 45);
+    background-image: url(images/background.jpg);
+    background-size: cover;
+}
+
+body::before {
+    background-color: rgb(31, 36, 45);
+    background-image: url(Images/background.jpg);
+    background-size: cover;
+    position: absolute;
+}
+
+body::after {
+    background: linear-gradient( to bottom, rgba(255, 0, 0, 0), rgb(191, 45, 45));
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+
+}
+
+.navigationnn .row {
+    --bs-gutter-x: 0;
+}
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.navbar ul li {
+    font-size: 20px;
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: var(--main-color);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.content span {
+    color: var(--main-color);
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+    font-weight: 600;
+
+}
+.content p {
+    margin: 20px auto;
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.content a {
+    color: var(--main-color);
+}
+
+</style>
+    
+  <header>
+      <div class="navigationnn">
+          <div class="row justify-content-between">
+                  <div class="navbar">
+                      <div class="col-sm-3 col-md-3 col-xl-3">
+                          <img src="Images/logo.png" class="logo">
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-xl-9">
+                          <ul>
+                          <li><a href="index.html">HOME</a></li>
+                          <li><a href="Workout/index.html">WORKOUT</a></li>
+                          <li><a href="Equipment/index.html">EQUIPMENT</a></li>
+                          <li><a href="Contact/index.html">CONTACT</a></li>
+                          </ul>
+                      </div>
+                      
+                  </div>
+          </div>
+      </div>
+      
+      
+  </header>
+  
+  <main>
+          <div class="content">
+              <div class="box">
+                  <h1>IMPROVE YOUR <span>BOXING</span></h1>
+                  <p>Check out the <a href="Workout/index.html">Workout</a> tab, so you can find some combos!</p>
+              </div>
+          </div>
+  </main>
+  
+  <footer>
+
+  </footer>
+  <div class="backgroundfade"> </div>
