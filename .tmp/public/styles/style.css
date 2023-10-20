@@ -122,7 +122,6 @@ a {
 .navbar ul li:hover:after {
     width: 100%;
 }
-
 .content {
     width: 100%;
     position: absolute;
@@ -151,4 +150,17 @@ a {
 
 .content a {
     color: var(--main-color);
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border: 6px solid black;
+    border-radius:  12px;
+    background-color: (black, 20%);
+    height: 50%;
+    width: 60%;
+    top: 50%;
+    transform: translateY(-50%);
 }
