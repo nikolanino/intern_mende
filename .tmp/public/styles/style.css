@@ -120,13 +120,22 @@ a {
 .navbar ul li:hover:after {
     width: 100%;
 }
-.content {
+
+.content{
+    transform: translateY(-70%);
+    position: absolute;
     width: 100%;
     top: 50%;
     text-align: center;
     color: white;
 }
 
+.content1 {
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    color: white;
+}
 .content span {
     color: var(--main-color);
 }
