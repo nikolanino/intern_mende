@@ -25,19 +25,19 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-3 col-sm-3 col-md-3 col-lg-3"> </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 contact">
+                <div class="col-md-3 col-lg-3"> </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 ">
 
-                    <div class="box">
+                    <div class="contact">
                             <div class="content1">
                                 <div class="titleh1">
                                     <h1>Contact us</h1>
                                 </div>
                                 <div class="form">
                                     <form action="#" id="loginForm">
-                                        <input type="text" id="name" class="form-control" placeholder="Enter your Name...">
-                                        <input type="text" id="lastname" class="form-control" placeholder="Enter your Last Name..." style="margin-top: 5px;">
-                                        <textarea  id="context" class="form-control box" placeholder="Enter your problem..." style="margin-top:10px; height:200px;"></textarea>
+                                        <input type="text" name="userName" id="name" class="form-control" placeholder="Enter your Name...">
+                                        <input type="text" name="userSurename" id="lastname" class="form-control" placeholder="Enter your Last Name..." style="margin-top: 5px;">
+                                        <textarea  name="userContext" id="context" class="form-control box" placeholder="Enter your problem..." style="margin-top:10px; height:200px;"></textarea>
                                         <button onclick="submitForm()">Submit</button>
                                     </form>
                                 </div>
@@ -46,7 +46,6 @@
                     </div>
 
                 </div>
-                <div class="col-3 col-sm-3 col-xl-3"></div>
             </div>
            
         </div>
