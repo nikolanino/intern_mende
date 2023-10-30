@@ -49,13 +49,13 @@ body {
     height: 100vh;
     width: auto;
     background-color: rgb(31, 36, 45);
-    background-image: url(images/background.jpg);
+    background-image: url(/images/background.jpg);
     background-size: cover;
 }
 
 body::before {
     background-color: rgb(31, 36, 45);
-    background-image: url(images/background.jpg);
+    background-image: url(/images/background.jpg);
     background-size: cover;
     
 }
